@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tab"><h1 class="imp1">Shark-Core</h1> </div>
+    <div id="inner">
+        <h1 id="msg">Send a Message To Us</h1> <div id="type"></div>
+    </div>
+    <form action="https://message-api-pgrp.onrender.com" method="post" id="send">
+        <textarea required name="text" placeholder="Text Here" maxlength="2000" style="resize: none;" name="" id="" cols="30" rows="10"></textarea>
+        <input required id="email" name="email" placeholder="Enter Your Email" type="email">
+        <button>Send</button>
+        <p>If you want to be replied to, please list you email address. The maximum length is 2000 characters</p>
+    </form>
+    <script>
+        let h1 = document.querySelector('#msg')
+        h1.innerHTML = ''
+        let fulltext = 'Send a Message To Us!'
+        let index = 0
+        setInterval(() => {
+            if(index < fulltext.length){
+                h1.innerHTML += fulltext[index]
+                index++
+            }
+            
+        }, 70)
+    </script>
+</body>
+</html>
