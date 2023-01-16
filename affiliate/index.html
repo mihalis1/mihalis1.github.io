@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://media.discordapp.net/attachments/958047849441030224/1059135224090460230/shark-core1.png?width=412&amp;height=412">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shark-Core</title>
+</head>
+<body>
+    <div class="homeWrapper">
+        <h1>Affiliate Program</h1>
+    </div>
+    <div  class="navbar"><div id="mobileNone"> <a href="https://www.shark-core.com">Home</a> <a href="https://www.shark-core.com/message">Contact Us</a> <a href="https://discord.gg/NUXg4g72xF">Order Here</a> <a href="">Affiliate Program</a> 
+        </div><img id="logo" src="../icons/logo.png" alt=""> <img id="menuIcon" src="../icons/menu.png" alt="shark-core">
+    </div>
+    <div id="textSection">
+        <h1 id="titleX">Information</h1>
+        <p>
+            Hello welcome, this is our brand-new Affiliate Program, in the future we will provide you with free courses.
+            Currently this program isn't well developed YET, but you can still do it. For every customer you get us you earn <span class="highlight">30%</span>
+            of the money that the customer will spend. <br> <br>
+            To start just simply join the discord server and DM one of the owners. Or you can even go content us through <a href="https://www.shark-core.com/message">here</a>
+        </p>
+    </div>
+    <h1 style="text-align: center;">
+        <button class="button"><a href="https://discord.gg/NUXg4g72xF">Start Making Money</a>Join discord Server</button>
+    </h1>
+    
+    <div>
+        <div id="sidebar" class="sidebarClosed">
+            <span>X</span>
+            <h1>Links</h1>
+            <a href="">Buy From Discord | Best</a>
+            <a href="">Buy From Website | Optional</a>
+            <a href="">Become An Affiliate Member | Job</a>
+        </div>
+        
+    <script>
+        const sidebar = document.getElementById('sidebar')
+        const sidebarBtn = document.querySelector('#sidebar span')
+        const iconBtn = document.getElementById('menuIcon')
+        iconBtn.addEventListener('click', () => {
+            sidebar.classList.remove('sidebarClosed')
+        })
+        sidebarBtn.addEventListener('click', () => {
+            sidebar.classList.add('sidebarClosed')
+        })
+    </script>
+    
+</body>
+</html>
