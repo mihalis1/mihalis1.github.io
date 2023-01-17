@@ -15,6 +15,15 @@
         <div class="h-captcha" data-sitekey="3f6e5269-b36d-4b10-8661-e5d598156a6d"></div>
         <input type="submit" value="Submit" />
     </form>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            hcaptcha.execute();
+        });
     
+        window.hcaptcha.onVerify = function(token) {
+            document.querySelector("form").submit();
+        };
+    </script>
 </body>
 </html>
