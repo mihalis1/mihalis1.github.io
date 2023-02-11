@@ -326,3 +326,7 @@ h2{
     color: #f1f1f1;
     text-decoration: underline white solid;
 }
+
+iframe{
+    max-width: 100%;
+}
